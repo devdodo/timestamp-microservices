@@ -76,7 +76,7 @@ app.get("/api/timestamp/:date_string", (req, res) => {
 
 */
 
-/*
+
 app.get("/api/timestamp/", (req, res) => {
   const date = new Date();
   res.json({ unix: date.valueOf(), utc: date.toUTCString() });
@@ -100,8 +100,9 @@ app.get("/api/timestamp/:date_string", (req, res) => {
       res.json({ unix: dateObject.valueOf(), utc: dateObject.toUTCString() });
     }
   }
-});*/
+});
 
+/*
 app.get("/api/timestamp/:date_string?", (req, res) => {
   let s = req.params.date_string || 0;
   let dt;
@@ -138,6 +139,8 @@ app.get("/api/timestamp/:date_string?", (req, res) => {
     }
   }
 });
+
+*/
 
 //1479663089000
 
